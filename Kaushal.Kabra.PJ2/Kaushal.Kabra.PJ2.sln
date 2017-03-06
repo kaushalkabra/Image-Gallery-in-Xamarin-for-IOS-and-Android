@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kaushal.Kabra.PJ2", "Kaushal.Kabra.PJ2.csproj", "{B701F054-68B4-40C2-97F6-9D7561723544}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B701F054-68B4-40C2-97F6-9D7561723544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B701F054-68B4-40C2-97F6-9D7561723544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B701F054-68B4-40C2-97F6-9D7561723544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B701F054-68B4-40C2-97F6-9D7561723544}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

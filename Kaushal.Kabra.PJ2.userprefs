@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{0EF1E0AC-A4DE-4154-989E-3E5904A377DA}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOS/Main.cs">
+    <Files>
+      <File FileName="Kaushal.Kabra.PJ2/KaushalKabraPJ2.cs" Line="220" Column="4" />
+      <File FileName="Kaushal.Kabra.PJ2/App.xaml.cs" Line="28" Column="31" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Kaushal.Kabra.PJ2.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.64700A1E-EAA5-4609-9012-505F2E3FCEC1" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/kaushalkabra/Projects/Kaushal.Kabra.PJ2/iOS/Main.cs" relfile="iOS/Main.cs" line="17" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

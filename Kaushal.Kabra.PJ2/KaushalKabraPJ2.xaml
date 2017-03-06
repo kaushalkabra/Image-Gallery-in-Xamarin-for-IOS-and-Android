@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		xmlns:local="clr-namespace:Kaushal.Kabra.PJ2" 
+		x:Class="Kaushal.Kabra.PJ2.KaushalKabraPJ2">
+    <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
+  <ContentPage.Content>
+    <ScrollView>
+      <StackLayout Orientation="Vertical">
+        <Label Text="Photo Gallery"
+               TextColor="Blue"
+               FontSize="Large"
+               HorizontalOptions="Center"/>
+
+		<!--Frame : To add and Remove buttons-->
+        <Frame>
+          <StackLayout Orientation="Horizontal">
+            <Button x:Name="add"
+                       Text="Add Images From URL"
+                       FontSize="Medium"
+                       IsEnabled="True"
+                       Clicked="OnAddButtonClicked"/>
+            <Button x:Name="remove"
+                        Text="Remove Image"
+                        FontSize="Medium"
+                        IsEnabled="True"
+                        Clicked="OnRemoveButtonClicked" />
+          </StackLayout>
+        </Frame>
+
+		<!--Frame: Stacklayout for adding url -->
+        <Frame x:Name="hide" IsVisible="False" >
+          <StackLayout >
+            <Entry x:Name="url"
+                    Placeholder="URL"/>
+            <Entry x:Name="ImageName"
+                    Placeholder="NAME"/>
+            <Button x:Name="addlist"
+                        Text="ADD To List"
+                        FontSize="Large"
+                        Clicked="OnAddListButtonClicked" />
+            <Button x:Name="cancel"
+                        Text="Cancel"
+                        FontSize="Large"
+                        Clicked="OnCancelButtonClicked" />
+          </StackLayout>
+        </Frame>
+				
+        <!--Frame: Image frame-->
+        <Frame>
+          <StackLayout>
+            <Image x:Name="image"
+                     PropertyChanged="OnImagePropertyChanged"
+                     Source="http://korestaurant.com/wp-content/themes/ko/images/topscroll_slide2.jpg">
+            </Image>
+            <ActivityIndicator x:Name="activityIndicator"
+                                Color="Black"/>
+          </StackLayout>
+        </Frame>
+
+        <!--Frame: On-Off Toggle and Timer -->
+        <Frame>
+          <StackLayout Orientation="Horizontal">
+            <Label Text="Timer: " TextColor="Black">
+            </Label>
+            <Label x:Name="timer"
+                    Text="5"
+                     TextColor="Black"
+                     FontSize="Large"
+                     HorizontalOptions="Start"/>
+            <Switch x:Name="switchButton"
+                    Toggled="OnToggled"
+                    VerticalOptions="End"
+                    HorizontalOptions="End" />
+          </StackLayout>
+        </Frame>
+				
+        <!--Frame: Stepper and Slider -->
+        <Frame>
+          <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Horizontal">
+              <Entry x:Name="entryTime"
+                       Text="5"
+                       Placeholder="Time"
+                       Keyboard="Numeric"
+                       TextChanged="OnTextChanged" />
+              <Stepper x:Name="stepper"
+                         Maximum="60"
+                         Minimum="1"
+                         ValueChanged="OnStepperValueChanged"
+                         HorizontalOptions="Center"/>
+            </StackLayout>
+            <Slider x:Name="slider"
+                      Maximum="60"
+                      Minimum="1"
+                      ValueChanged="OnSliderValueChanged" />
+          </StackLayout>
+        </Frame>
+				
+        
+        <!--Frame: List of all Images-->
+        <ScrollView>
+          <StackLayout Orientation="Vertical" x:Name="stacklayout">
+                 <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnImageTapped"
+                                    NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+            <StackLayout x:Name="list1"
+                           Orientation="Horizontal">
+               <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnImageTapped"
+                                    NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+              <Label HorizontalTextAlignment="End"
+                     VerticalTextAlignment="Center"
+                     TextColor="Black"
+                     Text="Image 1"/>
+            </StackLayout>
+            <StackLayout x:Name="list2"
+                          Orientation="Horizontal">
+               <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnImageTapped"
+                                    NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+              <Label HorizontalTextAlignment="End"
+                     VerticalTextAlignment="Center"
+                     TextColor="Black"
+                     Text="Image 2"/>
+            </StackLayout>
+            <StackLayout x:Name="list3"
+                          Orientation="Horizontal">
+               <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnImageTapped"
+                                    NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+              <Label HorizontalTextAlignment="End"
+                     VerticalTextAlignment="Center"
+                     TextColor="Black"
+                     Text="Image 3"/>
+            </StackLayout>
+            <StackLayout x:Name="list4"
+                          Orientation="Horizontal">
+               <StackLayout.GestureRecognizers>
+              <TapGestureRecognizer Tapped="OnImageTapped"
+                                    NumberOfTapsRequired="1" />
+            </StackLayout.GestureRecognizers>
+              <Label HorizontalTextAlignment="End"
+                     VerticalTextAlignment="Center"
+                     TextColor="Black"
+                     Text="Image 4"/>
+            </StackLayout>
+
+          </StackLayout>
+        </ScrollView>
+      </StackLayout>
+    </ScrollView>
+  </ContentPage.Content>
+</ContentPage>
